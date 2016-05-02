@@ -1,6 +1,8 @@
 # page-glitch
 
-Chrome extension - take a screenshot of current viewport, glitch it, then save it. Uses [glitch-canvas](https://github.com/snorpey/glitch-canvas) (thank you!).
+Chrome extension - take a screenshot of current viewport and glitch it - it opens in a new tab. Uses [glitch-canvas](https://github.com/snorpey/glitch-canvas).
+
+**UPDATE:** glitch-canvas currently [not working in Chrome](https://github.com/snorpey/glitch-canvas/issues/11). 
 
 # FAQ
 
