@@ -1,18 +1,18 @@
 {
-  "manifest_version": 2,
-
   "name": "Page Glitcher",
   "description": "This extension takes a screenshot of the current page and glitches it",
   "version": "1.0",
   "author": "zky829",
-
+  "background": {
+    "persistent": false,
+    "scripts": ["page-glitch.js"]
+  },
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html",
     "default_title": "Page Glitcher"
   },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "activeTab"
+  ], 
+  "manifest_version": 2
 }
