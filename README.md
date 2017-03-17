@@ -10,6 +10,7 @@ Ideas:
 
 - Let user drag and select a portion of the viewport to screenshot and glitch
 - Right-click on an element/picture in the browser to glitch
+- Save the file instead of opening in a new tab?
 
 # FAQ
 
