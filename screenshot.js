@@ -1,19 +1,25 @@
 "use strict";
 
 function setScreenshotUrl(url) {
-	var canvas = document.createElement('canvas');
-	canvas.width = document.documentElement.clientWidth;
-	canvas.height = document.documentElement.clientHeight;
-	var ctx = canvas.getContext('2d');
-	
-	// Draw the screenshot on the canvas
-	var img = new Image();
-	img.src = url;
-	ctx.drawImage(img, 0, 0);
+	var glitchParams = {
+		amount:     35,
+		iterations: 20,
+		quality:    30,
+		seed:       25
+	};
 
-	// glitch
-	var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-	ctx.putImageData(gleech.pixelFunk(imageData), 0, 0);
-	console.log(canvas.toDataURL('image/png'));
-	document.getElementById('glitch-container').src = canvas.toDataURL('image/png');
+	var screenshotImage = new Image();
+	screenshotImage.src = url;
+
+	screenshotImage.onload = function() {
+		glitch(glitchParams)
+			.fromImage(screenshotImage)
+			.toDataURL()
+			.then(function (dataURL) {
+				console.log(dataURL);
+				var out = new Image();
+				out.src = dataURL;
+				document.getElementById('glitch-container').appendChild(out);
+			});
+	}
 }
