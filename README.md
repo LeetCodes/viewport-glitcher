@@ -1,12 +1,15 @@
-# page-glitch
+# viewport-glitch
 
 Chrome extension which takes a screenshot of current viewport, glitches it, and opens the result in a new tab. 
 
-## Status
+Uses [glitch-canvas](https://github.com/snorpey/glitch-canvas).
 
-Currently using [Glitchy3bitdither](https://github.com/JKirchartz/Glitchy3bitdither) which unfortunately doesn't look great. 
+## TODO
 
-TODO: Use [glitch-canvas](https://github.com/snorpey/glitch-canvas) instead.
+Ideas: 
+
+- Let user drag and select a portion of the viewport to screenshot and glitch
+- Right-click on an element/picture in the browser to glitch
 
 # FAQ
 
@@ -17,3 +20,4 @@ TODO: Use [glitch-canvas](https://github.com/snorpey/glitch-canvas) instead.
 # Resources
 
 https://developer.chrome.com/extensions/samples
+https://github.com/snorpey/glitch-canvas
