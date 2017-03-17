@@ -1,6 +1,6 @@
-# viewport-glitch
+# viewport-glitcher
 
-Chrome extension which takes a screenshot of current viewport, glitches it, and opens the result in a new tab. 
+[Chrome extension](https://chrome.google.com/webstore/detail/viewport-glitcher/onacloncedplghlhddcofmdccfejhipd) which takes a screenshot of current viewport, glitches it, and opens the result in a new tab. 
 
 Uses [glitch-canvas](https://github.com/snorpey/glitch-canvas).
 
