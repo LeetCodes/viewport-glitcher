@@ -1,6 +1,6 @@
 {
   "name": "Page Glitcher",
-  "description": "This extension takes a screenshot of the current page and glitches it",
+  "description": "Take a screenshot of the current tab viewport and glitch it.",
   "version": "1.0",
   "author": "zky829",
   "background": {
@@ -8,7 +8,7 @@
     "scripts": ["page-glitch.js"]
   },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "img/icon.png",
     "default_title": "Page Glitcher"
   },
   "permissions": [

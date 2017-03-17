@@ -13,19 +13,20 @@ chrome.browserAction.onClicked.addListener(function () { // on extension icon
 
     chrome.tabs.onUpdated.addListener(function listener (tabId, changedProps) {
       // Check that the tab's id matches the tab we opened, and it's done loading.
-      if (tabId != targetId || changedProps.status != "complete") return;
-      // else
+      if (tabId != targetId || changedProps.status != 'complete') {
+        return;
+      }
+
       chrome.tabs.onUpdated.removeListener(listener);
 
-      // Look through all views to find the window which will display
-      // the screenshot.  The url of the tab which will display the
-      // screenshot includes a query parameter with a unique id, which
-      // ensures that exactly one view will have the matching URL.
+      // Look through all views to find the window which will display the screenshot.
+      // The url of the tab which will display the screenshot includes a query parameter with a unique id,
+      // which ensures that exactly one view will have the matching URL.
       var views = chrome.extension.getViews();
       for (var i = 0, len = views.length; i < len; i++) {
         var view = views[i];
         if (view.location.href == viewTabUrl) {
-          view.glitchAndSetScreenshotUrl(screenshotDataUrl);
+          view.setScreenshotUrl(screenshotDataUrl);
           break;
         }
       }
