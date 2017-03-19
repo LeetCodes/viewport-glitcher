@@ -20,5 +20,5 @@ Ideas:
 
 # Resources
 
-https://developer.chrome.com/extensions/samples
-https://github.com/snorpey/glitch-canvas
+- https://developer.chrome.com/extensions/samples
+- https://github.com/snorpey/glitch-canvas
